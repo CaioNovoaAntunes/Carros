@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: kotlinCasadocodigo
+
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/carros
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: admin
+    dialect: org.hibernate.dialect.MySQLInnoDBDialect
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
